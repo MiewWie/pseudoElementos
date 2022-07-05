@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html body
+{
+    background: #3115;
+}
+h1 
+{
+    font-size: 2rem;
+    color: #000 !important;
+    font-style: italic !important;
+}
+div
+{
+    border: .1rem solid #000;
+}
+.element__after::after
+{
+    font-size: 1.5rem;
+    content: "( ͠❛ ͜ʖ͠❛ )";
+    color: #808;
+}
+.element__before:nth-child(2):before
+{
+    font-size: 1.5rem;
+    content: "( ͠❛ ͜ʖ͠❛ )";
+    color: #808;
+}
+.element__first-letter::first-letter
+{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #741a1a;
+    font-style: italic;
+}
+.element__first-line::first-line
+{
+    font-size: 1.5rem;
+    color: #ff0;
+}
+.element__selection::selection
+{ 
+    color: #fff;  
+    background: #000; 
+}
+
+/* Pseudo Elemento backdrop */
+
+.button
+{
+    width: 4rem;
+    height: 2rem;
+    border-radius: .5rem;
+}
+dialog::backdrop
+{
+    margin: auto;
+    background-color: #0088;
+}
+dialog
+{
+    background-color: #038;
+    padding: 1rem;
+}
+
+
+.element__placeholder
+{
+    height: 2.5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    color: #741a1a;
+}
+.element__placeholder::placeholder
+{
+    font-weight: 600;
+    opacity: 100;
+    font-size: 1.5rem;
+    color: #741a1a;
+}
+
+
+.element__market
+{
+    font-size: 1.5rem;
+}
+ul li::marker
+{
+    color: #741a1a;
+    font-size: 2rem;
+}
+
+
